@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    background-color: #EFFAF2;
+    font-family: monospace;
+}
+hr{
+    color: #70CAD1;
+    background-color: #70CAD1;
+    width: 10%;
+}
+#header{
+    height: 100%;
+}
+#leftHeader{
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+#rightHeader{
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: #EFFAF2;
+    border-style: dotted;
+    border-color: black;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu{
+    background-color: #3E517A;
+    color: #EFFAF2;
+    height: 50px;
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sectionMenu{
+    border-right: 1px #EFFAF2 solid;
+    width: 20%;
+    text-align: center;
+    font-size: large;
+    height: 100%;
+}
+.sectionMenu:nth-child(5){
+    border: none;
+}
+.sectionMenu:hover{
+    background-color: #EFFAF2;
+    color: #3E517A;
+}
+#general{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#program{
+    background-color: green;
+}
+.bodyEntry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftProgram{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightProgram{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+#egress{
+    background-color: red;
+}
+.bodyEgress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.elementEgress{
+    width: 15%;
+    text-align: center;
+}
+#methodology{
+    background-color: orange;
+}
+.featuresMethodology{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#studies{
+    background-color: blueviolet;
+}
+#footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.infoFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoTwo{
+    text-align: left;
+}
+.contact{
+    text-align: right;
+}
+.notice{
+    width: 100%;
+    text-align: center;
+}
