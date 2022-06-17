@@ -1,16 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
 }
 html,body{
     height: 100%;
     background-color: #EFFAF2;
     font-family: monospace;
-}
-hr{
-    color: #70CAD1;
-    background-color: #70CAD1;
-    width: 10%;
 }
 #header{
     height: 100%;
@@ -21,6 +18,22 @@ hr{
     height: 100%;
     width: 50%;
     float: left;
+}
+#logoOne{
+    font-size: 40;
+}
+#title{
+    font-size: 64px;
+    font-weight: bolder;
+}
+#description{
+    font-size: 32px;
+}
+#date{
+    font-size: 20px;
+}
+.data{
+    font-size: 24px;
 }
 #rightHeader{
     height: 100%;
@@ -34,10 +47,24 @@ form{
     background-color: #EFFAF2;
     border-style: dotted;
     border-color: black;
-    width: 70%;
+    width: 0px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+form>p{
+    font-size: 24px;
+}
+form>label{
+    font-size: 16px;
+}
+input{
+    width: 420px;
+    height: 50px;
+}
+input::placeholder{
+    font-size: 24px;
 }
 #menu{
     background-color: #3E517A;
@@ -53,9 +80,11 @@ form{
 .sectionMenu{
     border-right: 1px #EFFAF2 solid;
     width: 20%;
-    text-align: center;
     font-size: large;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sectionMenu:nth-child(5){
     border: none;
@@ -77,18 +106,32 @@ form{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 .leftProgram{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    width: 40%;
+}
+.elementEntry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.elementEntryText{
+    text-align: center;
+    font-size: 24px;
+    width: 30%;
 }
 .rightProgram{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
+    width: 50%;   
 }
 #egress{
     background-color: red;
