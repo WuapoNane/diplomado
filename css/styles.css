@@ -1,43 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
 }
 html,body{
     height: 100%;
-    background-color: #EFFAF2;
-    font-family: monospace;
+    background: #EFFAF2;
 }
 #header{
     height: 100%;
 }
 #leftHeader{
     background-color: black;
-    color: aliceblue;
     height: 100%;
     width: 50%;
     float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    color: whitesmoke !important;
+}
+#imageHeader{
+    float: left;
 }
 #logoOne{
-    font-size: 40;
+    font-size: 40px;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 35px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+#logoOne > b{
+    font-weight: 500;
 }
 #title{
-    font-size: 64px;
-    font-weight: bolder;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 140px;
 }
 #description{
-    font-size: 32px;
+    margin-top: 20px;
+    font-size: 24px;
+    float: left;
+    font-weight: 200;
+    padding-right: 19px;
+}
+#divisionHeader{
+    background-color: #70CAD1;
+    width: 230px;
+    height: 3px;
+    margin-top: 180px;
+    border-radius: 5px;
+
 }
 #date{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+#data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+#data img{
+    height: 30px;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 .data{
-    font-size: 24px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 #rightHeader{
     height: 100%;
     width: 50%;
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     float: left;
     display: flex;
     justify-content: center;
@@ -45,68 +93,138 @@ html,body{
 }
 form{
     background-color: #EFFAF2;
-    border-style: dotted;
-    border-color: black;
-    width: 0px;
-    height: 440px;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 50px;
 }
 form>p{
     font-size: 24px;
+    padding-bottom: 40px;
 }
 form>label{
-    font-size: 16px;
+    align-self: baseline;
+    font-size: 11px;
+    opacity: 0.6;
+    margin-left: 50px;
+    padding-top: 5px;
 }
 input{
-    width: 420px;
-    height: 50px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    background: rgba(217, 217, 217,0.3);
+    border-style: none;
+    border: solid 1px #BCBDBD;
 }
 input::placeholder{
-    font-size: 24px;
+    font-size: 15px;
+    font-weight: 300;
+}
+#send{
+    margin-top: 30px;
+    background-color: #3E517A;
+    color: whitesmoke;
+    border: 0;
+    width: 100px;
+    text-align: center;
+    padding-left: 0;
 }
 #menu{
     background-color: #3E517A;
-    color: #EFFAF2;
-    height: 50px;
+    height: 60px;
     width: 100%;
     float: left;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: whitesmoke !important;
 }
 .sectionMenu{
     border-right: 1px #EFFAF2 solid;
     width: 20%;
-    font-size: large;
+    font-size: 25px;
+    font-weight: 400;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.sectionMenu:hover{
+    background-color: whitesmoke;
+    color: #3E517A;
+}
 .sectionMenu:nth-child(5){
     border: none;
-}
-.sectionMenu:hover{
-    background-color: #EFFAF2;
-    color: #3E517A;
 }
 #general{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-#program{
-    background-color: green;
+section{
+    margin-top: 100px;
+}
+.sectionTitle{
+    font-size: 35px;
+    font-weight: 500;
+    padding-left: 70px;
+}
+.arrows{
+    height: 40px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    padding-top: 5px;
+}
+#down{
+    transform: rotate(180deg);
+}
+.sectionTitle>p{
+    margin-left: 40px;
+}
+.divisionTitle{
+    background-color: #70CAD1;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+#divisionProgram{
+    width: 345px;
+}
+.bodyProgram{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 25px;
+}
+ul{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+li{
+    margin-top: 30px;
+}
+#divisionEntry{
+    width: 430px;
 }
 .bodyEntry{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin-top: 30px;
+    margin-left: 110px;
+    width: 80%;
 }
 .leftProgram{
     display: flex;
@@ -119,32 +237,68 @@ input::placeholder{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
     width: 100%;
+}
+.subDivisionEntry{
+    height: 90px;
+    width: 1px;
+    background-color: #70CAD1;
+}
+.elementEntryImage{
+    height: 90px;
+    width: 90px;
 }
 .elementEntryText{
     text-align: center;
     font-size: 24px;
-    width: 30%;
+    width: 60%;
 }
 .rightProgram{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;   
+    width: 40%;   
 }
-#egress{
-    background-color: red;
+#divisionEgress{
+    width: 420px;
 }
 .bodyEgress{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    margin-left: 110px;
+    width: 85%;
 }
 .elementEgress{
     width: 15%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+.egressImage{
+    height: 90px;
+    width: auto;
+}
+#leadership{
+    margin-top: 20px;
+    height: 70px;
+    width: 95px;
+}
+.elementEgressText{
+    font-size: 21px;
+    margin-top: 15px;
+}
+.subDivisionEgress{
+    height: 250px;
+    width: 1px;
+    background-color: #70CAD1;
+    border-radius: 5px;
 }
 #methodology{
     background-color: orange;
@@ -160,7 +314,7 @@ input::placeholder{
 }
 #footer{
     background-color: black;
-    color: white;
+    color: whitesmoke !important;
     width: 100%;
 }
 .infoFooter{
