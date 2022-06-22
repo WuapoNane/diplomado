@@ -7,6 +7,7 @@
 html,body{
     height: 100%;
     background: #EFFAF2;
+    scroll-behavior: smooth;
 }
 #header{
     height: 100%;
@@ -164,6 +165,19 @@ input::placeholder{
 .sectionMenu:nth-child(5){
     border: none;
 }
+.linkMenu{
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkMenu:hover{
+    background-color: whitesmoke;
+    color: #3E517A;
+}
 #general{
     width: 100%;
     display: flex;
@@ -186,9 +200,26 @@ section{
     justify-content: space-between;
     float: left;
     padding-top: 5px;
+    position: absolute;
+    z-index: -1;
 }
 #down{
     transform: rotate(180deg);
+}
+.links{
+    z-index:1;
+    height: 40px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    padding-top: 5px;
+}
+.link{
+    width: 22px;
+    height: 12px;
 }
 .sectionTitle>p{
     margin-left: 40px;
