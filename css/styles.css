@@ -21,10 +21,10 @@ html,body{
     box-sizing: border-box;
     color: whitesmoke !important;
 }
-#imageHeader{
+.imageLogo{
     float: left;
 }
-#logoOne{
+.logo{
     font-size: 40px;
     float: left;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ html,body{
     font-weight: 200;
     margin-top: 5px;
 }
-#logoOne > b{
+.logo > b{
     font-weight: 500;
 }
 #title{
@@ -145,7 +145,7 @@ input::placeholder{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: whitesmoke !important;
+    color: whitesmoke;
 }
 .sectionMenu{
     border-right: 1px #EFFAF2 solid;
@@ -222,7 +222,6 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
     margin-left: 110px;
     width: 80%;
 }
@@ -300,36 +299,163 @@ li{
     background-color: #70CAD1;
     border-radius: 5px;
 }
-#methodology{
-    background-color: orange;
+#divisionMethodology{
+    width: 360px;
+}
+.bodyMethodology{
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.bodyMethodology>p{
+    font-size: 28px;
+    font-weight: 400;
 }
 .featuresMethodology{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 92%;
+}
+.featureMethodology{
+    width: 21%;
+    height: 230px;
+    border: 5px solid #3E517A;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureImage{
+    margin-top: 30px;
+    height: 83px;
+}
+.featureText{
+    font-size: 21px;
+    color: #3E517A;
+    font-weight: 600;
+    margin-top: 30px;
+}
+#featureClasses{
+    height: 70px;
+    margin-top: 35px;
+}
+#featureClasses~div{
+    margin-top: 38px;
+}
+#divisionStudies{
+    width: 245px;
+}
+.bodyStudies{
+    height: 250px;
+    width: 87%;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.leftStudies{
+    height: 100%;
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.leftStudies>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 33%;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.first{
+    background-color: #6E3978;
+}
+.second{
+    background-color: #399B4D;
+}
+.third{
+    background-color: #67BEC5;
+}
+.rightStudies{
+    background-color: rgba(0, 0, 0,0.06);
+    height: 100%;
+    width: 44%;
+    float: left;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-#studies{
-    background-color: blueviolet;
+.table{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.elementTable{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.elementTable>div{
+    height: 100%;
+    width: 17%;
+}
+.elementTable>p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.purple{
+    background-color: #6E3978;
+}
+.green{
+    background-color: #399B4D;
+}
+.blue{
+    background-color: #67BEC5;
+}
+.double{
+    width: 45% !important;
 }
 #footer{
     background-color: black;
-    color: whitesmoke !important;
+    color: whitesmoke;
+    margin-top: 110px;
     width: 100%;
 }
 .infoFooter{
-    width: 100%;
+    width: 90%;
+    padding-top: 20px;
+    margin-left: 70px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
-.logoTwo{
-    text-align: left;
+.logoFooter{
+    margin-left: 0 !important;
 }
 .contact{
     text-align: right;
+    font-weight: 300;
+    font-size: 18px;
+}
+.contact>p{
+    font-weight: 600;
+    font-size: 22px;
 }
 .notice{
-    width: 100%;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 70px;
     text-align: center;
+    font-weight: 100;
+    font-size: 16px;
 }
